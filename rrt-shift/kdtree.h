@@ -2,7 +2,11 @@
 #define KDTREE_H
 
 #include <iostream>
-#include <GL/freeglut.h>
+#if defined(__APPLE__) || defined(MACOSX)
+    #include <GLUT/freeglut.h>
+#else
+    #include <GL/freeglut.h>
+#endif
 
 using namespace std;
 

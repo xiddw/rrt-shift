@@ -4,7 +4,11 @@
 #include <QGLWidget>
 
 #include <GL/gl.h>
-#include <GL/glut.h>
+#if defined(__APPLE__) || defined(MACOSX)
+    #include <GLUT/freeglut.h>
+#else
+    #include <GL/freeglut.h>
+#endif
 
 #include "glpoly.h"
 #include "kdtree.h"

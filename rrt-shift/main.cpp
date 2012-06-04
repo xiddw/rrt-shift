@@ -12,6 +12,8 @@ int main(int argc, char *argv[]) {
     srand(time(NULL));
 
     QApplication app(argc, argv);
+    glutInit(&argc, argv);
+
     Window window;
     window.show();
 

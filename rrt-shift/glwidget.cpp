@@ -69,6 +69,8 @@ void trace(int v) {
 }
 
 GLWidget::GLWidget(QWidget *parent) : QGLWidget(QGLFormat(QGL::SampleBuffers), parent) {
+    cout << QDir::currentPath().append("/../data/tief.obj").toAscii().data() << endl;
+
     a = new GLWModel(QDir::currentPath().append("/../data/tief.obj").toAscii().data());
     b = new GLWModel(QDir::currentPath().append("/../data/death2.obj").toAscii().data());
 

@@ -129,8 +129,6 @@ void Window::clickSolve(void) {
         }
         GLWidget::arrNodes[last->id] = last;
 
-
-
 //        GLWidget::arrNodes[last->id] = last;
 
 //        GLboolean intsB;
