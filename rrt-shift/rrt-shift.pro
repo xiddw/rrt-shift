@@ -16,7 +16,7 @@ SOURCES += \
     kdtree.cpp
 
 QT += core gui opengl
-LIBS += -lfreeglut -lglu32
+LIBS += -lglut -lGL -lGLU
 
 
 
